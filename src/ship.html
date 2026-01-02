@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spaceship</title>
+    <link rel="stylesheet" href="ship.css">
+</head>
+<body>
+    <header>
+        <div class="earth-life">earth life</div>
+        <ul>
+            <li onclick="restartGame()">Restart</li>
+            <li onclick="pauseAndPlayGame()" id="pause-resume">Pause</li>
+            <li onclick="cancelGame()">cancel</li>
+        </ul>
+        <h3>Scores:<sub id="scores">00000</sub></h3>
+    </header>
+
+    <main>
+        <img src="./imgs/spaceship_9255909.png" alt="spaceship" class="space-ship" id="space-ship">
+        <div class="stones-side" id="stones-side"></div>
+    </main>
+
+    <div class="game-blocker" id="game-blocker">
+        <p class="message-provider">
+            Hello!!!! User, this is the most game to play
+            when you need to relax especial when you are performing
+            your job like remotely job, and other internet
+            based job.
+            <br>
+            let me tell you the role you have in game?
+            <br>
+            <strong>there is huge big stones of fire in the universe falling from east to west direction to the earth on different speeds,</strong>
+            and direction from <strong>earth</strong> to <strong>mars</strong> is from west to east
+            <br>
+            as you are <strong>SPACESHIP CONTROLLER"</strong> now the <strong>UNITED STATE OF WORLD</strong> in 3 minutes left
+            chosen you to take control over the spaceship that will sent into the <strong>galaxy or universe</strong>
+            to shoot that stones falling from <strong>MARS</strong>
+            <br>
+            <strong>
+                <i>the World ordered that you must take control over that ship.</i>
+            </strong>
+        </p>
+        <h2 class="reached-scores">Scores: </h2>
+        <div class="start-button">
+            <h2>I guess you are ready to start Game!</h2>
+            <button onclick="startGameFirstTime()">start spaceship Engine</button>
+        </div>
+    </div>
+
+    <audio src="./sounds/spaceship movement.mp3" id="space-ship-sound" controls></audio>
+    <audio src="./sounds/marks counter.mp3" id="marks-audio" controls></audio>
+    <audio src="./sounds/destroy ship.mp3" id="simple-crush" controls></audio>
+    
+    <script src="ship.js"></script>
+</body>
+</html>
